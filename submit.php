@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message .= "Price: $price\n";
 
     // Send email
-    $headers = "From: no-reply@yourdomain.com"; // Replace with your domain
+    $headers = "From: https://asifmufti922.github.io/social-marketing"; // Replace with your domain
     if (mail($to, $subject, $message, $headers)) {
         echo "<script>alert('Order submitted successfully!'); window.location.href = 'index.html';</script>";
     } else {
